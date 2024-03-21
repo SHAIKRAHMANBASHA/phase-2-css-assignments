@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element selector</title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            margin: 20px;
+        }
+
+        div {
+            background-color: bisque;
+            border: 3px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        h1 {
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+            background-color: aqua;
+            color: brown;
+            padding: 10px;
+            font-size: 40px;
+
+        }
+
+        p {
+            text-align: justify;
+            font-size: 25px;
+            font-family: sans-serif;
+            color: blue;
+        }
+
+        h2 {
+            text-align: center;
+            color: red;
+            font-size: 30px;
+        }
+
+        h3 {
+            text-align: center;
+            color: black;
+        }
+
+        img {
+            margin: auto 430px;
+            width: 500px;
+            border: 12px groove green;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            font-size: 30px;
+            color: red;
+        }
+
+        ol {
+            font-size: 30px;
+            color: blue;
+        }
+        li{
+            font-weight: bold;
+            font-family:sans-serif;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Element Selector</h1>
+        <p>The element > element selector in CSS is used to style only those elements which are the children of the
+            specific
+            parent. The operand on the left of > is the parent and the operand on the right is the children element.
+            In CSS, an element selector is a pattern that selects HTML elements for styling. The selector includes the element name and the CSS properties to apply to it, within brackets. For example, h3 selects all h3 elements. Here are some other examples of selectors:
+
+        </p>
+        <p>
+            <mark>Note:</mark> Elements that are not directly a child of the specified parent, are not selected.
+        </p>
+        <h2>Syntax:</h2>
+
+        <h3>element1 > element2 {
+            //CSS Property
+            }
+        </h3>
+
+        <img src="data:image/jpeg;base64,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"
+            alt="element selector">
+        <h1>Advantages</h1>
+        <ul>
+            <li>All the elements to be styled can be included in a single page and the formatting is applied</li>
+            <li> To change the style of a single element, very little editing is required</li>
+            <li> The changes are reflected throughout wherever that particular styling is used</li>
+        </ul>
+        <h1>Disadvantages</h1>
+        <ol>
+            <li>Browser compatibility issues that require additional efforts for cross-browser consistency</li>
+            <li> Complexity for beginners learning the language</li>
+            <li> Potential security vulnerabilities (like XSS attacks)</li>
+            <li>Limitations in layout control which may require supplementary tools</li>
+        </ol>
+    </div>
+</body>
+
+</html>

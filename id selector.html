@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id selector</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+        }
+        #div-container {
+            width: 100%;
+            height: 400px;
+            border: 1px solid yellow;
+            background-color: black;
+            display: flex;
+            overflow:auto;
+            border: 4px solid red;
+        }
+
+        #div-two {
+            background-color: aquamarine;
+            margin: auto;
+            width: 100%;
+            height: 1000px;
+            border: 1px solid black;
+        }
+
+        #h1-one {
+            text-align: center;
+            padding: 0%;
+            margin: 0%;
+            font-size: 40px;
+            background-color: blue;
+            color: white;
+        }
+
+        #paragraph {
+            font-size: 20px;
+            text-align: justify;
+            color: rgb(3, 3, 2);
+        }
+        #img{
+            margin-top: 10px;
+            margin-left:500px;
+            border:13px solid yellow;
+            width:400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div-container">
+        <div id="div-two">
+            <h1 id="h1-one">ID SELECTOR</h1>
+            <img id="img" src="data:image/png;base64,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" alt="">
+            <p id="paragraph">
+                The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element! To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+                The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element! To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus debitis placeat aliquam aperiam!
+                Obcaecati, veniam! Repellat sunt quae repudiandae nemo. Dolorum quae illo quis aperiam recusandae,
+                deserunt doloremque vel delectus.
+                Illo ipsum ipsam soluta. Fugiat consectetur esse impedit, quibusdam itaque placeat ipsam modi animi.
+                Porro est repellendus dignissimos corrupti illum vitae, accusantium sint perferendis, quaerat obcaecati
+                nam? Quas, dicta? Ipsam?
+                Voluptatem provident pariatur, tempore blanditiis asperiores recusandae necessitatibus dignissimos nemo
+                minima nulla magnam, cupiditate eaque nostrum repellendus, cum exercitationem enim laudantium quisquam
+                molestiae voluptatum? Voluptatem qui tempore fugiat molestiae voluptatibus?
+                Odit dolore obcaecati fugiat nisi. Iure aliquam, quisquam excepturi quibusdam eos minima officiis
+                tempore natus blanditiis. Nobis, explicabo nostrum porro aliquid, unde laudantium, eveniet optio quo
+                quis recusandae voluptatibus! Dolorem?
+                Nemo inventore sed dolorum ipsa fugiat quia? Accusantium, sit! Dolorum libero iste accusamus repudiandae
+                assumenda quae nesciunt incidunt itaque doloribus. Animi iusto modi exercitationem accusamus nihil fugit
+                aliquam corrupti sunt.
+                Doloribus, nihil sapiente distinctio totam debitis ipsa, molestias placeat, consectetur deserunt omnis
+                cumque? Odit, deleniti enim! Optio, fugiat totam debitis facere suscipit laborum necessitatibus,
+                excepturi nostrum, quidem voluptate rerum exercitationem!
+                Debitis veniam dolores itaque. Ratione iure ducimus quidem maiores deserunt voluptatum eligendi et
+                placeat? Enim quos quasi, quas dicta fugiat iusto qui nostrum vel tempora minima voluptate pariatur
+                eveniet fugit.
+                Nulla voluptas officia enim ab repellat, dicta quidem cum nesciunt distinctio libero ea fugit porro nam
+                cupiditate non recusandae neque hic natus excepturi vero? Nulla culpa incidunt voluptas praesentium
+                corrupti!
+                Natus hic earum perferendis odit ducimus enim cumque voluptatibus rem assumenda, dicta porro inventore
+                minus consequatur nam alias consequuntur accusantium quaerat ut recusandae maiores est facilis. Quasi
+                debitis quas eum.
+                Maxime recusandae veniam facere, nihil debitis quidem cumque saepe amet ipsum sapiente suscipit velit
+                placeat, officia odit sit hic libero, soluta nam nesciunt eius sint. Nesciunt dolor ratione fuga
+                molestiae?
+                Quibusdam, sit voluptate. Nihil, earum provident omnis tenetur aspernatur voluptas fugiat repellendus.
+                Exercitationem sunt, quaerat, beatae quis quae ut tempora reiciendis, voluptatibus repellendus
+                voluptates ad suscipit nobis neque recusandae labore.
+                Non aliquam eos numquam. Harum maiores pariatur corrupti iste nisi assumenda minus ut exercitationem
+                saepe dignissimos dolore similique, earum asperiores nemo in eum, commodi repudiandae ad nulla excepturi
+                eos molestias?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ab tenetur fuga, nihil totam maxime
+                quos, quaerat quas, ratione eius autem temporibus nesciunt fugiat consequatur sequi assumenda veritatis
+                blanditiis non!
+                Eligendi odit repellendus, facere dolorem ipsa fuga officiis possimus est at ab, architecto fugit.
+                Similique doloribus voluptatibus tempora odio nesciunt officia voluptate veniam reiciendis accusamus
+                sapiente, et alias, nobis nihil.
+                Assumenda voluptatum ratione, incidunt, maiores ipsa tenetur neque cupiditate et quisquam omnis in.
+                Illo, minima veniam. Eaque eius inventore sint impedit repudiandae blanditiis eligendi earum, hic
+                commodi ducimus natus a!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

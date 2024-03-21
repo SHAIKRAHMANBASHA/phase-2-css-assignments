@@ -1,0 +1,44 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    margin: 10px;
+    background-color: yellow;
+}
+h1{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    background-color: aqua;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    text-transform: capitalize;
+
+}
+h2{
+    text-align:left ;
+    background-color: black;
+    color:white;
+    padding: 10px;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-left: 40px;
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: bisque;
+    padding: 20px;
+}
+ul{
+    list-style-type: square;
+    font-size: 25px;
+    font-weight: bold;
+}
+ol{
+    list-style: decimal-leading-zero;
+    font-size: 25px;
+    font-weight: bold;
+}
