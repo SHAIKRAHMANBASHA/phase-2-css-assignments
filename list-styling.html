@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list styling</title>
+    <style>
+        body{
+          padding: 0%;
+          margin: 0%;
+        }
+        h1{
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 40px;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        h2{
+            font-size: 35px;
+            text-transform: capitalize;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .square{
+            list-style-type: square;
+            font-size: 30px;
+            color:blue;
+        }
+        .circle{
+            list-style-type: circle;
+            font-size: 30px;
+            color: blue;
+        }
+        .disc{
+            list-style-type: disc;
+            font-size: 30px;
+            color:blue;
+        }
+        .numeric{
+            list-style-type: decimal-leading-zero;
+            font-size: 30px;
+            color: blue;
+            margin-left: 15px;
+        }
+        .custom{
+            list-style-type: none;
+            font-size: 30px;
+            color: blue;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>custom list styles</h1>
+
+    <h2>square bullets</h2>
+    <ul class="square">
+        <li>square bullets 1</li>
+        <li>square bullets 2</li>
+        <li>square bullets 3</li>
+    </ul>
+    <h2>circle bullets</h2>
+    <ul class="circle">
+        <li>circle bullets 1</li>
+        <li>circle bullets 2</li>
+        <li>circle bullets 3</li>
+    </ul>
+    <h2>disc bullets</h2>
+    <ul class="disc">
+        <li>dics bullets 1</li>
+        <li>dics bullets 2</li>
+        <li>dics bullets 3</li>
+    </ul>
+    <h2>numeric </h2>
+    <ol class="numeric">
+        <li>numeric 1</li>
+        <li>numeric 2</li>
+        <li>numeric 3</li>
+    </ol>
+    <!------list-style:-type none-------->
+    <h2>custom</h2>
+    <ul class="custom">
+        <li>custom 1</li>
+        <li>custom 2</li>
+        <li>custom 3</li>
+    </ul>
+
+</body>
+</html>
